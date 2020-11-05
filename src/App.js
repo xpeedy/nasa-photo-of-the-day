@@ -4,7 +4,7 @@ import axios from "axios"
 import Header from "./components/header"
 import Img from "./components/img"
 import Footer from "./components/footer"
-
+import styled from "styled-components";
 
 
 function App() {
@@ -24,18 +24,32 @@ function App() {
 
 
   return (
-    <div className="App">
+    <StyledBackground className="App">
       <Header/>
-      <Img
-      HDimage = {nasaData.hdurl}
-      />
-      <Footer
-      title = {nasaData.title}
-      info = {nasaData.explanation}
-      date = {nasaData.date}
-      />
-    </div>
+      <StyledDiv>
+        <Img
+        HDimage = {nasaData.hdurl}
+        />
+        <Footer
+        title = {nasaData.title}
+        info = {nasaData.explanation}
+        date = {nasaData.date}
+        />
+      </StyledDiv>
+    </StyledBackground>
   );
 }
+
+const StyledDiv = styled.div`
+display:flex;
+text-align: center;
+margin-right:4%;
+
+`
+
+const StyledBackground = styled.div`
+background-color: darkblue;
+padding:1%;
+`
 
 export default App;

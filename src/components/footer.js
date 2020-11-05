@@ -1,21 +1,31 @@
 import React, {useState, useEffect} from "react";
+import styled from "styled-components";
 
 function Footer(props){
 
 
     return(
     <div>
-        <div className="title">
+        <StyleTitle className="title">
         <h1>{props.title}</h1>
-        </div>
-        <div className="info">
+        </StyleTitle>
+        <StyleInfo className="info">
         <p>{props.info}</p>
-        </div>
-        <div className="date">
+        </StyleInfo>
+        <StyleDate className="date">
         <h2>{props.date}</h2>
-
-        </div>
+        </StyleDate>
     </div>)
 }
 
+const StyleTitle = styled.h1`
+font-weight:bold;
+`
+const StyleInfo = styled.p`
+font-size: 160%;
+`
+
+const StyleDate = styled.h2`
+font-size: 2rem;
+`
 export default Footer;
