@@ -48,8 +48,9 @@ margin-right:4%;
 `
 
 const StyledBackground = styled.div`
-background-color: darkblue;
+background: url("https://wp.technologyreview.com/wp-content/uploads/2019/05/hubble-telescope-nasa-10.jpg");
 padding:1%;
+color: whitesmoke;
 `
 
 export default App;

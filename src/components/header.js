@@ -10,6 +10,7 @@ function Header(){
 
 const StyleHeader = styled.h1`
 font-weight: bold;
+text-decoration: underline;
 font-size:5rem;
 display: flex;
 justify-content: center;

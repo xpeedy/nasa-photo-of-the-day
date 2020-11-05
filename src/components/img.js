@@ -12,11 +12,12 @@ function Img(props){
 }
 
 const StyledImg = styled.img`
-border: solid black;
-border: 30px;
-height: 40%;
-width: 50% ;
-border-style: dotted;
+border: solid white;
+
+box-shadow: 0.4rem 0.4rem 0.4rem whitesmoke;
+border-radius:10%;
+height: 50%;
+width: 53% ;
 display: flex;
 margin:4%;
 margin-right:4%;

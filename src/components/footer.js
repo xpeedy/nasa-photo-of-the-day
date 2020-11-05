@@ -5,7 +5,7 @@ function Footer(props){
 
 
     return(
-    <div>
+    <InfoContainer>
         <StyleTitle className="title">
         <h1>{props.title}</h1>
         </StyleTitle>
@@ -15,8 +15,14 @@ function Footer(props){
         <StyleDate className="date">
         <h2>{props.date}</h2>
         </StyleDate>
-    </div>)
+    </InfoContainer>)
 }
+
+const InfoContainer = styled.div`
+box-shadow: 0.4rem 0.4rem 0.4rem whitesmoke;
+border: solid white;
+border-radius: 10%
+`
 
 const StyleTitle = styled.h1`
 font-weight:bold;
