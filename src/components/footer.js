@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import styled from "styled-components";
 
 function Footer(props){
@@ -24,14 +24,14 @@ border: solid white;
 border-radius: 10%
 `
 
-const StyleTitle = styled.h1`
+const StyleTitle = styled.div`
 font-weight:bold;
 `
-const StyleInfo = styled.p`
+const StyleInfo = styled.div`
 font-size: 160%;
 `
 
-const StyleDate = styled.h2`
+const StyleDate = styled.div`
 font-size: 2rem;
 `
 export default Footer;

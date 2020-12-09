@@ -1,15 +1,18 @@
-import React, {useState, useEffect} from "react";
+
+import React from "react";
 import styled from "styled-components";
 
 function Img(props){
-    const {HDimage} = props
+    const {HDimage, video} = props
 
     return(
-    // className = "imgContainer">
-    //     <img src = {HDimage} alt = "nasa picture"/>
-    <StyledImg src = {HDimage} alt = "nasa picture"/>
+        <StyledImg src = {HDimage} alt = "nasa picture"/>
+        // <StyledImg>{ HDimage ? src=HDimage alt="nasa picture" : 
+        // src=video alt="nasa video"}</StyledImg>
+    
     )
 }
+{/* <StyledImg src = {HDimage} alt = "nasa picture"/> */}
 
 const StyledImg = styled.img`
 border: solid white;
