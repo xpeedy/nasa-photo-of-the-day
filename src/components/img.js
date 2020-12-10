@@ -7,9 +7,6 @@ function Img(props){
 
     return(
         <StyledImg src = {HDimage} alt = "nasa picture"/>
-        // <StyledImg>{ HDimage ? src=HDimage alt="nasa picture" : 
-        // src=video alt="nasa video"}</StyledImg>
-    
     )
 }
 {/* <StyledImg src = {HDimage} alt = "nasa picture"/> */}
