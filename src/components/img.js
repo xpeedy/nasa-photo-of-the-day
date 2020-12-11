@@ -16,8 +16,8 @@ border: solid white;
 
 box-shadow: 0.4rem 0.4rem 0.4rem whitesmoke;
 border-radius:10%;
-height: 50%;
-width: 53% ;
+height: 20%;
+width: 40% ;
 display: flex;
 margin:4%;
 margin-right:4%;

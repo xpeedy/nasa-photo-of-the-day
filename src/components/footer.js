@@ -21,7 +21,9 @@ function Footer(props){
 const InfoContainer = styled.div`
 box-shadow: 0.4rem 0.4rem 0.4rem whitesmoke;
 border: solid white;
-border-radius: 10%
+border-radius: 10%;
+height : 20%;
+margin-top: 5%;
 `
 
 const StyleTitle = styled.div`
